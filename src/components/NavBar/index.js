@@ -13,7 +13,7 @@ const NavBar = () => {
         <Header>
             <Container>
                 <Nav>
-                    <NavLogo>
+                    <NavLogo to="/">
                         <NavLogoImg src={logo} alt='logorentbaix' />
                     </NavLogo>
                     <NavList isOpen={isOpen}>

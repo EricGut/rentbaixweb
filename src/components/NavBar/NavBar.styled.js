@@ -16,7 +16,7 @@ export const Nav = styled.nav`
     justify-content: space-between;
 `;
 
-export const NavLogo = styled.div`
+export const NavLogo = styled(Link)`
     max-width: 100%;
 `;
 
