@@ -48,6 +48,10 @@ ul{
     list-style-type: none;
 }
 
+section{
+    margin-top: 2rem;
+}
+
 /* Make images easier to work with */
 img,
 picture {

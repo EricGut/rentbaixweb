@@ -85,6 +85,7 @@ export const NavItemLink = styled(Link)`
 `;
 
 export const NavMobileHam = styled.div`
+padding-top: .5rem;
     cursor: pointer;
     width: 1.7rem;
     @media screen and (min-width: 1260px){
