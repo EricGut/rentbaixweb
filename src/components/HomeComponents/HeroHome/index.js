@@ -3,6 +3,7 @@ import Container from '../../Container'
 import { HeroHomeCar, HeroHomeContent, HeroHomeMainBlock, HeroHomeMainText, HeroHomeMainTextBold, HeroHomeMainTextRed, HeroHomeSection } from './HeroHome.styled'
 
 const HeroHome = () => {
+
     return (
         <HeroHomeSection>
             <Container>
