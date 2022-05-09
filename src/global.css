@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700,800&display=swap');
 
 
 /* Box sizing rules */
@@ -13,6 +13,8 @@
 /* colors */
 :root {
     --main-color: #e73722;
+    --primary-deg-color: #d09292;
+    --secondary-deg-color: #c82270;
 }
 
 

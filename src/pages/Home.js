@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroHome from '../components/HomeComponents/HeroHome'
 import ServicesHome from '../components/HomeComponents/ServicesHome'
+import VehiclesHome from '../components/HomeComponents/VehiclesHome'
 import Main from '../components/Main'
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
         <Main>
             <HeroHome />
             <ServicesHome />
+            <VehiclesHome />
         </Main>
     )
 }

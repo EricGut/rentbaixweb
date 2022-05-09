@@ -6,6 +6,8 @@ import Container from '../../Container'
 import renting from '../../../images/icons/servicesCards/renting.png'
 import dias from '../../../images/icons/servicesCards/dias.png'
 import meses from '../../../images/icons/servicesCards/meses.png'
+// Button
+import ButtonLink from '../../ButtonLink'
 
 const ServicesHome = () => {
     const cardsInfo = [
@@ -52,6 +54,7 @@ const ServicesHome = () => {
                                             <CardDescription>
                                                 {item.description}
                                             </CardDescription>
+                                            {item.btn && <ButtonLink link='#'>descubre más</ButtonLink>}
                                         </CardText>
                                     </ServicesDisplayGridCard>
                                 )

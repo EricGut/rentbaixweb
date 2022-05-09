@@ -11,7 +11,7 @@ export const ServicesHomeSectionContent = styled.div`
 export const ServicesDisplayGrid = styled.div`
     margin-top: 2rem;
     display: grid;
-    gap: 2rem;
+    gap: 3rem;
 `;
 export const ServicesDisplayGridCard = styled.div`
     display: flex;
@@ -31,8 +31,9 @@ export const CardTitle = styled.p`
     text-transform: uppercase;
     color: var(--main-color);
     font-weight: 600;
-`;
+    `;
 export const CardDescription = styled.p`
     padding: .5rem 0;
+    margin-bottom: 1rem;
 `;
 
