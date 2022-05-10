@@ -28,7 +28,8 @@ export const NavLogoImg = styled.img`
 `;
 
 export const NavList = styled.ul`
-    position: absolute;
+    position: fixed;
+    z-index: 2000;
     background: rgba(0,0,0,0.9);
     top: ${({ isOpen }) => (isOpen ? '0' : '-100vh')};
     left: 0;
@@ -49,6 +50,7 @@ export const NavList = styled.ul`
         flex-direction: initial;
         justify-content: initial;
         gap: initial;
+        z-index: initial;
     }
 `;
 

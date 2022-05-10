@@ -1,7 +1,7 @@
 import React from 'react'
 import ButtonLink from '../../ButtonLink'
 import Container from '../../Container'
-import MainTitle from '../../SectionsTitle'
+import { MainTitle } from '../../SectionsTitle'
 import { VehiclesCardImg, VehiclesCardLinkWrapp, VehiclesCardLink, VehiclesCardTitle, VehiclesGridCard, VehiclesHomeContent, VehiclesHomeGrid, VehiclesHomeSection, VehiclesHomeTitleLink } from './VehiclesHome.styled'
 // vehicles images
 import carCard from '../../../images/vehicles/car.png'

@@ -1,5 +1,5 @@
 import React from 'react'
-import MainTitle from '../../SectionsTitle'
+import { MainTitle } from '../../SectionsTitle'
 import { CardDescription, CardIcon, CardText, CardTitle, ServicesDisplayGrid, ServicesDisplayGridCard, ServicesHomeSection, ServicesHomeSectionContent } from './ServicesHome.styled'
 import Container from '../../Container'
 // cards icons

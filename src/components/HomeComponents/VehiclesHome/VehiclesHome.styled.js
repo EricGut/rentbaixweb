@@ -28,7 +28,7 @@ export const VehiclesGridCard = styled.div`
 export const VehiclesCardTitle = styled.p`
     text-transform: uppercase;
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: 800;
     color: #fff;
 `;
 export const VehiclesCardImg = styled.img`
