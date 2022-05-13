@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImage from '../components/BannerOffers'
+import BannerHome from '../components/HomeComponents/BannerHome'
 import ContactHome from '../components/HomeComponents/ContactHome'
 import HeroHome from '../components/HomeComponents/HeroHome'
 import ServicesHome from '../components/HomeComponents/ServicesHome'
@@ -12,7 +12,7 @@ const Home = () => {
 
     return (
         <Main>
-            <BannerImage src={offerRv} />
+            <BannerHome image={offerRv} />
             <HeroHome />
             <ServicesHome />
             <VehiclesHome />

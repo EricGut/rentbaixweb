@@ -12,6 +12,9 @@ export const ServicesDisplayGrid = styled.div`
     margin-top: 2rem;
     display: grid;
     gap: 3rem;
+    @media screen and (min-width: 1000px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 `;
 export const ServicesDisplayGridCard = styled.div`
     display: flex;

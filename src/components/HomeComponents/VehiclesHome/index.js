@@ -17,13 +17,13 @@ const VehiclesHome = () => {
         },
         {
             id: 2,
-            title: 'motos',
-            img: vespaCard
+            title: 'autocaravanas',
+            img: rvCard
         },
         {
             id: 3,
-            title: 'autocaravanas',
-            img: rvCard
+            title: 'motos',
+            img: vespaCard
         },
         {
             id: 4,

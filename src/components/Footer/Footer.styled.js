@@ -4,6 +4,9 @@ import styled from "styled-components";
 export const FooterBlock = styled.footer`
 margin-top: 5rem;
     font-size: .6rem;
+    @media screen and (min-width: 1359px){
+        font-size: .8rem;
+    }
 `;
 export const FooterContent = styled.div``;
 export const FooterPolitics = styled.div`

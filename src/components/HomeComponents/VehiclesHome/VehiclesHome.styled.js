@@ -14,6 +14,10 @@ export const VehiclesHomeGrid = styled.div`
     margin-top: 3rem;
     display: grid;
     gap: 2rem;
+    @media screen and (min-width: 945px){
+        
+        grid-template-areas: "a b";
+    }
 `;
 export const VehiclesGridCard = styled.div`
     position: relative;
@@ -24,6 +28,10 @@ export const VehiclesGridCard = styled.div`
     padding: 1rem;
     overflow: hidden;
     box-shadow: 0 0 .8rem .3rem rgba(0,0,0,.2);
+    transition: transform .3s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
 `;
 export const VehiclesCardTitle = styled.p`
     text-transform: uppercase;
@@ -35,6 +43,10 @@ export const VehiclesCardImg = styled.img`
     position: absolute;
     right: -5rem;
     top: 4rem;
+    @media screen and (min-width: 945px){
+        top: 1.5rem;
+        width: 30rem;
+    }
 `;
 export const VehiclesCardLinkWrapp = styled.div`
     position: absolute;

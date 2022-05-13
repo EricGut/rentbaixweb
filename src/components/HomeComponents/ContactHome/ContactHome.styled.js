@@ -8,10 +8,19 @@ export const ContactHomeContactFlex = styled.div`
     border-radius: 2rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    @media screen and (min-width: 934px){
+        display: flex;
+        
+    }
     
 `;
 export const ContactHomeContactFlexInfo = styled.div`
 padding: 1rem;
+ @media screen and (min-width: 934px){
+        width: 50%;
+        
+    }
+
 `;
 export const ContactFlexInfoTextWrapp = styled.div`
     display: flex;
@@ -35,4 +44,8 @@ export const ContactFlexInfoScheduleText = styled.p`
 margin-top: 1rem;
 `;
 export const ContactHomeContactFlexMap = styled.div`
+ @media screen and (min-width: 934px){
+        width: 50%;
+        
+    }
 `;
