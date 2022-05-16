@@ -30,7 +30,7 @@ export const NavLogoImg = styled.img`
 export const NavList = styled.ul`
     position: fixed;
     z-index: 2000;
-    background: rgba(0,0,0,0.9);
+    background: #fff;
     top: ${({ isOpen }) => (isOpen ? '0' : '-100vh')};
     left: 0;
     width: 100vw;
@@ -80,7 +80,7 @@ export const NavListItem = styled.li`
 `;
 
 export const NavItemLink = styled(Link)`
-    color: #fff;
+    color: #000;
     @media screen and (min-width: 1260px){
         color: #000;
     }
@@ -100,4 +100,7 @@ export const CloseNav = styled.div`
     position: absolute;
     top: 1.4rem;
     right: 2rem;
+     @media screen and (min-width: 1260px){
+        display: none;
+    }
 `;

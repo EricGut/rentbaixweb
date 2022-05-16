@@ -13,22 +13,26 @@ const VehiclesHome = () => {
         {
             id: 1,
             title: 'coches',
-            img: carCard
+            img: carCard,
+            link: 'cochesmotos'
         },
         {
             id: 2,
             title: 'autocaravanas',
-            img: rvCard
+            img: rvCard,
+            link: 'autocaravanas'
         },
         {
             id: 3,
             title: 'motos',
-            img: vespaCard
+            img: vespaCard,
+            link: 'cochesmotos'
         },
         {
             id: 4,
             title: 'furgonetas',
-            img: furgoCard
+            img: furgoCard,
+            link: 'furgonetas'
         },
     ]
     return (
@@ -47,7 +51,7 @@ const VehiclesHome = () => {
                                         <VehiclesCardTitle>{item.title}</VehiclesCardTitle>
                                         <VehiclesCardImg src={item.img} />
                                         <VehiclesCardLinkWrapp>
-                                            <VehiclesCardLink to="#">descubre más</VehiclesCardLink>
+                                            <VehiclesCardLink to={`/flota/` + item.link}>descubre más</VehiclesCardLink>
                                         </VehiclesCardLinkWrapp>
                                     </VehiclesGridCard>
                                 )

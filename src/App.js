@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 // pages
 import Home from './pages/Home';
+import Vehicles from './pages/Vehicles';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/flota/:name" element={<Vehicles />} />
       </Routes>
       <Footer />
     </Router>
