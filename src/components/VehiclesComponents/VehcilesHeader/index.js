@@ -1,20 +1,20 @@
 import React from 'react'
 import Container from '../../Container'
-import { VehiclesHeaderSection, VehiclesHeaderSectionContent, VehiclesHeaderSubTitle, VehiclesHeaderTitle } from './VehiclesHeader.styled'
+import { VehiclesHeaderBanner, VehiclesHeaderBannerContent, VehiclesHeaderSubTitle, VehiclesHeaderTitle } from './VehiclesHeader.styled'
 const VehiclesHeader = ({ info }) => {
     // Set Title Header
     let vehiclesInfoTitle = null;
-    // let vehiclesInfoImg = null;
+    let vehiclesInfoImg = null;
     info.map(data => {
         return (
-            vehiclesInfoTitle = data.name
-            // vehiclesInfoImg = data.img
+            vehiclesInfoTitle = data.name,
+            vehiclesInfoImg = data.img
         )
     })
     return (
-        <VehiclesHeaderSection>
+        <VehiclesHeaderBanner img={vehiclesInfoImg}>
             <Container>
-                <VehiclesHeaderSectionContent>
+                <VehiclesHeaderBannerContent>
                     <VehiclesHeaderSubTitle>
                         Nuestra Flota
                     </VehiclesHeaderSubTitle>
@@ -22,9 +22,9 @@ const VehiclesHeader = ({ info }) => {
                         {vehiclesInfoTitle}
                     </VehiclesHeaderTitle>
 
-                </VehiclesHeaderSectionContent>
+                </VehiclesHeaderBannerContent>
             </Container>
-        </VehiclesHeaderSection>
+        </VehiclesHeaderBanner>
     )
 }
 

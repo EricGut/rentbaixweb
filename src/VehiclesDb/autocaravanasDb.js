@@ -1,4 +1,4 @@
-import rvImg from '../images/vehiclesBanner/rvimage.png'
+import rvImg from '../images/vehiclesBanner/rvbanner.jpg'
 
 const cochesInfo = [
     {

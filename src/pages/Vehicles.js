@@ -6,6 +6,7 @@ import VehiclesHeader from '../components/VehiclesComponents/VehcilesHeader'
 // db
 import cochesDb from '../VehiclesDb/CochesDb'
 import autorv from '../VehiclesDb/autocaravanasDb'
+import VehicleCards from '../components/VehiclesComponents/VehicleCards'
 
 const Vehicles = () => {
     let info = [];
@@ -25,6 +26,7 @@ const Vehicles = () => {
     return (
         <Main>
             <VehiclesHeader info={info} />
+            <VehicleCards info={info} />
         </Main>
     )
 }
