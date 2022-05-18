@@ -7,6 +7,7 @@ import VehiclesHeader from '../components/VehiclesComponents/VehcilesHeader'
 import cochesDb from '../VehiclesDb/CochesDb'
 import autorv from '../VehiclesDb/autocaravanasDb'
 import VehicleCards from '../components/VehiclesComponents/VehicleCards'
+import VehicleCarIcons from '../components/VehiclesComponents/VehicleCarIcons'
 
 const Vehicles = () => {
     let info = [];
@@ -26,6 +27,7 @@ const Vehicles = () => {
     return (
         <Main>
             <VehiclesHeader info={info} />
+            {name === 'cochesmotos' ? <VehicleCarIcons /> : null}
             <VehicleCards info={info} />
         </Main>
     )

@@ -1,17 +1,23 @@
-import cochesImg from '../images/vehiclesBanner/carbanner.jpg'
+import bannerCochesImg from '../images/vehiclesBanner/carbanner.jpg'
+import cocheImg from '../images/vehicles/cars/carCard.png'
 
 const cochesInfo = [
     {
         id: 1,
         name: 'Coches y Motos',
-        img: cochesImg,
+        bannerImg: bannerCochesImg,
         info: {
-            minAge: '19',
-            exp: '1 año',
-            gear: 'Manual',
-            gas: 'diesel',
-            doors: '5',
-            seats: '7'
+            vehicleName: 'Coche',
+            subtitle: 'standard',
+            vehicleImg: cocheImg,
+            specs: {
+                minAge: 'Edad minima: 19',
+                exp: 'Experiencia: 1 año',
+                gear: 'Cambio: Manual',
+                gas: 'Combustible: diesel',
+                doors: 'Puertas: 5',
+                seats: 'Plazas: 7'
+            }
         }
     }
 ]

@@ -8,7 +8,7 @@ const VehiclesHeader = ({ info }) => {
     info.map(data => {
         return (
             vehiclesInfoTitle = data.name,
-            vehiclesInfoImg = data.img
+            vehiclesInfoImg = data.bannerImg
         )
     })
     return (

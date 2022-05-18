@@ -4,7 +4,7 @@ const cochesInfo = [
     {
         id: 1,
         name: 'Autocaravanas',
-        img: rvImg,
+        bannerImg: rvImg,
         info: {
             minAge: '19',
             exp: '1 año',
