@@ -8,16 +8,25 @@ import cochesDb from '../VehiclesDb/CochesDb'
 import autorv from '../VehiclesDb/autocaravanasDb'
 import VehicleCards from '../components/VehiclesComponents/VehicleCards'
 import VehicleCarIcons from '../components/VehiclesComponents/VehicleCarIcons'
+//  Banner images
+import bannerCochesImg from '../images/vehiclesBanner/carbanner.jpg'
+import rvImg from '../images/vehiclesBanner/rvbanner.jpg'
 
 const Vehicles = () => {
     let info = [];
+    let title = null;
+    let bannerImg = null;
     let { name } = useParams();
     switch (name) {
         case 'cochesmotos':
             info = cochesDb;
+            title = 'Coches y Motos';
+            bannerImg = bannerCochesImg
             break;
         case 'autocaravanas':
             info = autorv;
+            title = 'Autocaravanas';
+            bannerImg = rvImg
             break;
 
         default:
@@ -26,7 +35,7 @@ const Vehicles = () => {
     }
     return (
         <Main>
-            <VehiclesHeader info={info} />
+            <VehiclesHeader title={title} bannerImg={bannerImg} />
             {name === 'cochesmotos' ? <VehicleCarIcons /> : null}
             <VehicleCards info={info} />
         </Main>

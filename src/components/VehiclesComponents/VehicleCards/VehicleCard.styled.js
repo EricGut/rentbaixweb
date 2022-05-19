@@ -4,7 +4,15 @@ export const VehicleCardsSection = styled.section`
 `;
 export const VehicleCardsSectionContent = styled.div``;
 
-export const VehicleCardsGrid = styled.div``;
+export const VehicleCardsGrid = styled.div`
+    display: grid;
+    gap: 2rem;
+    @media screen and (min-width: 1035px){
+        
+    grid-template-columns: 1fr 1fr;
+   
+    }
+`;
 
 export const VehicleCardsItem = styled.div`
 position: relative;
@@ -31,12 +39,13 @@ export const VehicleCardsItemFrontSubTitle = styled.p`
 text-transform: uppercase;
 `;
 export const VehicleCardsItemFrontImage = styled.img`
-position: absolute;
+    position: absolute;
     right: -5rem;
     top: 4rem;
+    max-width: 20rem;
     @media screen and (min-width: 945px){
         top: 1.5rem;
-        width: 30rem;
+        max-width: 25rem;
     }
 `;
 
@@ -50,6 +59,7 @@ export const VehicleCardsItemInfoBtn = styled.div`
     left: 1rem;
     display: grid;
     place-items: center;
+    cursor: pointer;
     &::after{
         content: 'I';
     }

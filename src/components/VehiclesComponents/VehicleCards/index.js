@@ -13,23 +13,23 @@ const VehicleCards = ({ info }) => {
         <VehicleCardsSectionContent>
           <VehicleCardsGrid>
             {info.map(frontData => {
-              const { info } = frontData
+              const { specs } = frontData
               return (
                 <VehicleCardsItem key={frontData.id}>
                   <VehicleCardsItemFront>
                     <VehicleCardsItemFrontTitle>
-                      {info.vehicleName}
+                      {frontData.name}
                     </VehicleCardsItemFrontTitle>
                     <VehicleCardsItemFrontSubTitle>
-                      {info.subtitle}
+                      {frontData.subtitle}
                     </VehicleCardsItemFrontSubTitle>
-                    <VehicleCardsItemFrontImage src={info.vehicleImg} />
+                    <VehicleCardsItemFrontImage src={frontData.vehicleImg} />
                     <VehicleCardsItemInfoBtn onClick={toggleCard} />
                   </VehicleCardsItemFront>
                   <VehicleCardsItemBack onClick={toggleCard} isActive={isActive}>
                     <VehicleCardsItemBackInfo>
 
-                      {Object.values(info.specs).map((specsData, index) => {
+                      {Object.values(specs).map((specsData, index) => {
                         return (
                           <VehicleCardsItemBackInfoItem key={index}>
                             {specsData.split(':')[0]}:

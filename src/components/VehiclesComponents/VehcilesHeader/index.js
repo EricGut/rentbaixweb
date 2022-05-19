@@ -1,25 +1,17 @@
 import React from 'react'
 import Container from '../../Container'
 import { VehiclesHeaderBanner, VehiclesHeaderBannerContent, VehiclesHeaderSubTitle, VehiclesHeaderTitle } from './VehiclesHeader.styled'
-const VehiclesHeader = ({ info }) => {
-    // Set Title Header
-    let vehiclesInfoTitle = null;
-    let vehiclesInfoImg = null;
-    info.map(data => {
-        return (
-            vehiclesInfoTitle = data.name,
-            vehiclesInfoImg = data.bannerImg
-        )
-    })
+
+const VehiclesHeader = ({ title, bannerImg }) => {
     return (
-        <VehiclesHeaderBanner img={vehiclesInfoImg}>
+        <VehiclesHeaderBanner img={bannerImg}>
             <Container>
                 <VehiclesHeaderBannerContent>
                     <VehiclesHeaderSubTitle>
                         Nuestra Flota
                     </VehiclesHeaderSubTitle>
                     <VehiclesHeaderTitle>
-                        {vehiclesInfoTitle}
+                        {title}
                     </VehiclesHeaderTitle>
 
                 </VehiclesHeaderBannerContent>
