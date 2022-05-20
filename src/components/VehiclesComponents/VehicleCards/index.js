@@ -28,7 +28,6 @@ const VehicleCards = ({ info }) => {
                   </VehicleCardsItemFront>
                   <VehicleCardsItemBack onClick={toggleCard} isActive={isActive}>
                     <VehicleCardsItemBackInfo>
-
                       {Object.values(specs).map((specsData, index) => {
                         return (
                           <VehicleCardsItemBackInfoItem key={index}>

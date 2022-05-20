@@ -2,6 +2,7 @@ import styled from "styled-components";
 // banner images
 
 export const VehiclesHeaderBanner = styled.div`
+    width: 100%;
     background: url(${props => props.img}) center no-repeat;
     background-size: cover;
     height: 40vh;

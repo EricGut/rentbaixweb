@@ -3,11 +3,12 @@ import { useParams } from 'react-router-dom'
 import Main from '../components/Main'
 // components
 import VehiclesHeader from '../components/VehiclesComponents/VehcilesHeader'
+import RvResumen from '../components/VehiclesComponents/RvResumen'
+import VehicleCarIcons from '../components/VehiclesComponents/VehicleCarIcons'
+import VehicleCards from '../components/VehiclesComponents/VehicleCards'
 // db
 import cochesDb from '../VehiclesDb/CochesDb'
 import autorv from '../VehiclesDb/autocaravanasDb'
-import VehicleCards from '../components/VehiclesComponents/VehicleCards'
-import VehicleCarIcons from '../components/VehiclesComponents/VehicleCarIcons'
 //  Banner images
 import bannerCochesImg from '../images/vehiclesBanner/carbanner.jpg'
 import rvImg from '../images/vehiclesBanner/rvbanner.jpg'
@@ -38,6 +39,7 @@ const Vehicles = () => {
             <VehiclesHeader title={title} bannerImg={bannerImg} />
             {name === 'cochesmotos' ? <VehicleCarIcons /> : null}
             <VehicleCards info={info} />
+            {name === 'autocaravanas' ? <RvResumen /> : null}
         </Main>
     )
 }
