@@ -9,9 +9,11 @@ import VehicleCards from '../components/VehiclesComponents/VehicleCards'
 // db
 import cochesDb from '../VehiclesDb/CochesDb'
 import autorv from '../VehiclesDb/autocaravanasDb'
+import furgoDb from '../VehiclesDb/furgosDb'
 //  Banner images
 import bannerCochesImg from '../images/vehiclesBanner/carbanner.jpg'
 import rvImg from '../images/vehiclesBanner/rvbanner.jpg'
+import furgoBanner from '../images/vehiclesBanner/furgobanner.jpg'
 
 const Vehicles = () => {
     let info = [];
@@ -29,7 +31,11 @@ const Vehicles = () => {
             title = 'Autocaravanas';
             bannerImg = rvImg
             break;
-
+        case 'furgonetas':
+            info = furgoDb;
+            title = 'Furgonetas';
+            bannerImg = furgoBanner
+            break;
         default:
             info = [];
             break;

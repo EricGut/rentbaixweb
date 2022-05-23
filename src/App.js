@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 // pages
 import Home from './pages/Home';
 import Vehicles from './pages/Vehicles';
+import RentingFlex from './pages/RentingFlex';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/flota/:name" element={<Vehicles />} />
+        <Route path="/rentingflexible" element={<RentingFlex />} />
       </Routes>
       <Footer />
     </Router>

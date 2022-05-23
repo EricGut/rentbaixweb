@@ -14,7 +14,7 @@ const NavBar = () => {
             <Container>
                 <Nav>
                     <NavLogo to="/">
-                        <NavLogoImg src={logo} alt='logorentbaix' />
+                        <NavLogoImg src={logo} alt='logorentbaix' loading="lazy" />
                     </NavLogo>
                     <NavList isOpen={isOpen} onClick={toggleNav}>
                         <CloseNav onClick={toggleNav}><svg id="Layer_1" data-name="Layer 1" style={{ display: "block" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.51 49.51" fill="#000"><defs><style></style></defs><rect className="cls-1" x="351.91" y="430.06" width="63.39" height="6.63" transform="translate(59.94 -552.94) rotate(45)" /><rect className="cls-1" x="351.91" y="430.06" width="63.39" height="6.63" transform="translate(602.45 59.94) rotate(135)" /></svg></CloseNav>
@@ -28,7 +28,7 @@ const NavBar = () => {
                             <NavItemLink to="/flota/autocaravanas">autocaravanas</NavItemLink>
                         </NavListItem>
                         <NavListItem>
-                            <NavItemLink to="#">renting flexible</NavItemLink>
+                            <NavItemLink to="/rentingflexible">renting flexible</NavItemLink>
                         </NavListItem>
                         <NavListItem>
                             <NavItemLink to="#">contacto</NavItemLink>

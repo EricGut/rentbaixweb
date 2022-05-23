@@ -54,7 +54,7 @@ const ServicesHome = () => {
                                             <CardDescription>
                                                 {item.description}
                                             </CardDescription>
-                                            {item.btn && <ButtonLink link='#'>descubre más</ButtonLink>}
+                                            {item.btn && <ButtonLink link='/rentingflexible'>descubre más</ButtonLink>}
                                         </CardText>
                                     </ServicesDisplayGridCard>
                                 )

@@ -57,7 +57,7 @@ const VehicleCarIcons = () => {
                         {carIcons.map(item => {
                             return (
                                 <VehicleIconsGridItem key={item.id}>
-                                    <VehicleIconsGridItemImg src={item.img} />
+                                    <VehicleIconsGridItemImg src={item.img} loading="lazy" />
                                     <VehicleIconsGridItemText>
                                         {item.name}
                                     </VehicleIconsGridItemText>

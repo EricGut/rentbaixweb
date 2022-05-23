@@ -23,7 +23,7 @@ const VehicleCards = ({ info }) => {
                     <VehicleCardsItemFrontSubTitle>
                       {frontData.subtitle}
                     </VehicleCardsItemFrontSubTitle>
-                    <VehicleCardsItemFrontImage src={frontData.vehicleImg} />
+                    <VehicleCardsItemFrontImage src={frontData.vehicleImg} loading="lazy" />
                     <VehicleCardsItemInfoBtn onClick={toggleCard} />
                   </VehicleCardsItemFront>
                   <VehicleCardsItemBack onClick={toggleCard} isActive={isActive}>
