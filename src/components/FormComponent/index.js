@@ -35,7 +35,7 @@ const FormComponent = () => {
         <Form>
             <FormInputWarpper>
                 <InputLabel htmlFor='name'>Nombre</InputLabel>
-                <FormInputText type="text" name='name' required placeholder="NOMBRE" required />
+                <FormInputText type="text" name='name' required placeholder="NOMBRE" />
             </FormInputWarpper>
             <FormInputWarpper>
                 <InputLabel htmlFor='email'>Correo</InputLabel>
