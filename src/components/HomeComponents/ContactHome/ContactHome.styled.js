@@ -49,3 +49,16 @@ export const ContactHomeContactFlexMap = styled.div`
         
     }
 `;
+export const ContactHomeFormSection = styled.section``;
+export const ContactHomeFormSectionContent = styled.div`
+@media screen and (min-width: 900px){
+        display: grid;
+place-items: center;
+    }
+`;
+export const ContactHomeFormSectionContentFormWrapper = styled.div`
+    margin-top: 2rem;
+    @media screen and (min-width: 900px){
+        width: 50%;
+    }
+`;

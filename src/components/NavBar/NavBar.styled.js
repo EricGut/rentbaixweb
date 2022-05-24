@@ -58,10 +58,10 @@ export const NavListItem = styled.li`
     text-transform: uppercase;
     font-size: 1.2rem;
     @media screen and (min-width: 1260px){
-        font-size: initial;
+        font-size: .9rem;
         margin-right: 3rem;
     }
-    &:nth-of-type(5){
+    &:nth-of-type(6){
         margin-right: initial;
     }
     &::after{

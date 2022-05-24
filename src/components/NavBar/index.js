@@ -31,7 +31,10 @@ const NavBar = () => {
                             <NavItemLink to="/rentingflexible">renting flexible</NavItemLink>
                         </NavListItem>
                         <NavListItem>
-                            <NavItemLink to="#">contacto</NavItemLink>
+                            <NavItemLink to="/empresas">empresas</NavItemLink>
+                        </NavListItem>
+                        <NavListItem>
+                            <NavItemLink to="/contacto">contacto</NavItemLink>
                         </NavListItem>
                     </NavList>
                     <NavMobileHam onClick={toggleNav}>

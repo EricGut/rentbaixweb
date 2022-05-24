@@ -18,13 +18,13 @@ export const InputLabel = styled.label`
 export const FormInputText = styled.input`
     padding: .3rem .5rem;
     border-radius: .5rem;
-    border: 1px #f4f4f4 solid;
+    border: 1px #737373 solid;
 `;
 export const FormInputTextArea = styled.textarea`
     height: 5rem;
     padding: .3rem .5rem;
     resize: none;
-     border: 1px #f4f4f4 solid;
+     border: 1px #737373 solid;
     border-radius: .5rem;
 `;
 export const ButtonWrapper = styled.div`
