@@ -3,11 +3,11 @@ import { ButtonWrapper, Form, FormInputText, FormInputTextArea, FormInputWarpper
 // import emailjs from 'emailjs-com'
 
 const FormComponent = () => {
-    const [name, setName] = React.useState()
-    const [email, setEmail] = React.useState()
-    const [message, setMessage] = React.useState()
-    const [loading, setLoading] = React.useState(false)
-    const [mailMessage, setMailMessage] = React.useState()
+    // const [name, setName] = React.useState()
+    // const [email, setEmail] = React.useState()
+    // const [message, setMessage] = React.useState()
+    // const [loading, setLoading] = React.useState(false)
+    // const [mailMessage, setMailMessage] = React.useState()
 
     // let templateParams = {
     //     name: name,
@@ -35,23 +35,23 @@ const FormComponent = () => {
         <Form>
             <FormInputWarpper>
                 <InputLabel htmlFor='name'>Nombre</InputLabel>
-                <FormInputText type="text" name='name' required placeholder="NOMBRE" onChange={e => { setName(e.target.value) }} />
+                <FormInputText type="text" name='name' required placeholder="NOMBRE" required />
             </FormInputWarpper>
             <FormInputWarpper>
                 <InputLabel htmlFor='email'>Correo</InputLabel>
-                <FormInputText type="email" name='email' placeholder="CORREO" required onChange={e => { setEmail(e.target.value) }} />
+                <FormInputText type="email" name='email' placeholder="CORREO" required />
             </FormInputWarpper>
             <FormInputWarpper>
                 <InputLabel htmlFor='phone'>Teléfono</InputLabel>
-                <FormInputText type="phone" name='phone' placeholder="TELÉFONO" required onChange={e => { setEmail(e.target.value) }} />
+                <FormInputText type="phone" name='phone' placeholder="TELÉFONO" required />
             </FormInputWarpper>
             <FormInputWarpper>
                 <InputLabel htmlFor='message' >Escribe Tu mensaje</InputLabel>
-                <FormInputTextArea name='message' placeholder="MENSAJE..." required onChange={e => { setMessage(e.target.value) }}></FormInputTextArea>
+                <FormInputTextArea name='message' placeholder="MENSAJE..." required ></FormInputTextArea>
             </FormInputWarpper>
             <ButtonWrapper>
-                <FormSubmit type="submit">{loading ? "Enviando..." : "Enviar mensaje"}</FormSubmit>
-                <MailMainMessage>{mailMessage}</MailMainMessage>
+                <FormSubmit type="submit">Enviar mesnaje</FormSubmit>
+                <MailMainMessage></MailMainMessage>
             </ButtonWrapper>
         </Form>
     )
