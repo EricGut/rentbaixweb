@@ -5,6 +5,8 @@ import rimorkayak7 from '../images/vehicles/rv/rimorkayak7.png'
 import rimorseal9 from '../images/vehicles/rv/rimorseal9.png'
 import rimorseal5 from '../images/vehicles/rv/rimorseal5.png'
 import vantanak60ft from '../images/vehicles/rv/vantanak60ft.png'
+// Gallery
+import { galleryAcross695ld, galleryOptimat70, galleryRimorkayak7, galleryRimorseal5, galleryRimorseal9, galleryVantanak60ft } from './rvGalleryDb'
 
 const autorv = [
     {
@@ -21,7 +23,8 @@ const autorv = [
             garage: 'Garaje: Amplio',
             beds: 'Camas: Cama doble'
 
-        }
+        },
+        gallery: galleryOptimat70
     },
     {
         id: 2,
@@ -38,6 +41,7 @@ const autorv = [
             beds: 'Camas: Transversal trasera'
 
         },
+        gallery: galleryVantanak60ft
     },
     {
         id: 3,
@@ -54,6 +58,7 @@ const autorv = [
             beds: 'Camas: 2 camas en literas + 2 camas dobles'
 
         },
+        gallery: galleryRimorkayak7
     },
     {
         id: 4,
@@ -70,6 +75,7 @@ const autorv = [
             beds: 'Camas: literas traseras + cama eléctrica supletoria'
 
         },
+        gallery: galleryAcross695ld
     },
     {
         id: 5,
@@ -86,6 +92,7 @@ const autorv = [
             beds: 'Camas: distribución transversal + cama eléctrica supletoria'
 
         },
+        gallery: galleryRimorseal5
     },
     {
         id: 6,
@@ -102,6 +109,7 @@ const autorv = [
             beds: 'Camas: 2 camas dobles + 2 camas literas'
 
         },
+        gallery: galleryRimorseal9
     }
 ]
 

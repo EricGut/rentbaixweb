@@ -6,13 +6,14 @@ const cochesInfo = [
         name: 'Coche',
         subtitle: 'standard',
         vehicleImg: cocheImg,
+        border: true,
         specs: {
-            minAge: 'Edad minima: 19',
-            exp: 'Experiencia: 1 año',
-            gear: 'Cambio: Manual',
-            gas: 'Combustible: diesel',
-            doors: 'Puertas: 5',
-            seats: 'Plazas: 7'
+            minAge: 'Edad minima: 25 años',
+            exp: 'Experiencia: 2 años de carnet de conducir',
+            gear: 'Cambio: Manual/Automático',
+            gas: 'Combustible: Diésel/Gasolina/Híbrido',
+            doors: 'Puertas: 4/5',
+            seats: 'Plazas: 2/3/5/6/7/9'
 
         }
     }

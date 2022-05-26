@@ -13,6 +13,7 @@ const furgodb = [
         name: 'Furgoneta',
         subtitle: 'Pequeña',
         vehicleImg: small,
+        border: true,
         specs: {
             travelers: 'Pasajeros: 2',
             volumen: 'Volumen carga: 3-4 m3',
@@ -26,6 +27,7 @@ const furgodb = [
         name: 'Furgoneta',
         subtitle: 'Mediana',
         vehicleImg: medium,
+        border: true,
         specs: {
             travelers: 'Pasajeros: 3',
             volumen: 'Volumen carga: 5-7 m3',
@@ -39,6 +41,7 @@ const furgodb = [
         name: 'Furgoneta',
         subtitle: 'Mediana Plus',
         vehicleImg: mediumPlus,
+        border: true,
         specs: {
             travelers: 'Pasajeros: 3',
             volumen: 'Volumen carga: 7-8 m3',
@@ -52,6 +55,7 @@ const furgodb = [
         name: 'Furgoneta',
         subtitle: 'Grande',
         vehicleImg: big,
+        border: true,
         specs: {
             travelers: 'Pasajeros: 3',
             volumen: 'Volumen carga: 10-11,5 m3',
@@ -65,6 +69,7 @@ const furgodb = [
         name: 'Furgoneta',
         subtitle: 'Grande Plus',
         vehicleImg: bigPlus,
+        border: true,
         specs: {
             travelers: 'Pasajeros: 3',
             volumen: 'Volumen carga: 13-15 m3',
@@ -78,6 +83,7 @@ const furgodb = [
         name: 'Camión',
         subtitle: 'Chasis con caja',
         vehicleImg: chasisCaja,
+        border: true,
         specs: {
             travelers: 'Pasajeros: 3',
             volumen: '20 m3',
@@ -91,6 +97,7 @@ const furgodb = [
         name: 'Camión',
         subtitle: 'Chasis con plataforma',
         vehicleImg: chasisPlataforma,
+        border: true,
         specs: {
             travelers: 'Pasajeros: 3',
             volumen: 'Volumen carga: 18 m3',

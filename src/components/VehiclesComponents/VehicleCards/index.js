@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Container from '../../Container'
-import { VehicleCardsGrid, VehicleCardsItem, VehicleCardsItemBack, VehicleCardsItemBackInfo, VehicleCardsItemBackInfoItem, VehicleCardsItemBackInfoItemRed, VehicleCardsItemFront, VehicleCardsItemFrontImage, VehicleCardsItemFrontSubTitle, VehicleCardsItemFrontTitle, VehicleCardsItemInfoBtn, VehicleCardsSection, VehicleCardsSectionContent } from './VehicleCard.styled'
+import { VehicleCardsGrid, VehicleCardsItem, VehicleCardsItemBack, VehicleCardsItemBackInfo, VehicleCardsItemBackInfoItem, VehicleCardsItemBackInfoItemRed, VehicleCardsItemFront, VehicleCardsItemFrontImage, VehicleCardsItemFrontSubTitle, VehicleCardsItemFrontTitle, VehicleCardsItemGallery, VehicleCardsItemInfoBtn, VehicleCardsSection, VehicleCardsSectionContent } from './VehicleCard.styled'
+import ImageGallery from 'react-image-gallery';
 
 const VehicleCards = ({ info }) => {
   const [isActive, setActive] = useState(false);
@@ -16,14 +17,19 @@ const VehicleCards = ({ info }) => {
               const { specs } = frontData
               return (
                 <VehicleCardsItem key={frontData.id}>
-                  <VehicleCardsItemFront>
+                  {frontData.gallery &&
+                    <VehicleCardsItemGallery>
+                      <ImageGallery items={frontData.gallery} showThumbnails={false} showPlayButton={false} />
+                    </VehicleCardsItemGallery>
+                  }
+                  <VehicleCardsItemFront border={frontData.border}>
                     <VehicleCardsItemFrontTitle>
                       {frontData.name}
                     </VehicleCardsItemFrontTitle>
                     <VehicleCardsItemFrontSubTitle>
                       {frontData.subtitle}
                     </VehicleCardsItemFrontSubTitle>
-                    <VehicleCardsItemFrontImage src={frontData.vehicleImg} loading="lazy" />
+                    <VehicleCardsItemFrontImage src={frontData.vehicleImg} />
                     <VehicleCardsItemInfoBtn onClick={toggleCard} />
                   </VehicleCardsItemFront>
                   <VehicleCardsItemBack onClick={toggleCard} isActive={isActive}>

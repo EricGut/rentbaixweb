@@ -49,7 +49,7 @@ const VehiclesHome = () => {
                                 return (
                                     <VehiclesGridCard key={item.id}>
                                         <VehiclesCardTitle>{item.title}</VehiclesCardTitle>
-                                        <VehiclesCardImg src={item.img} loading="lazy" />
+                                        <VehiclesCardImg src={item.img} />
                                         <VehiclesCardLinkWrapp>
                                             <VehiclesCardLink to={`/flota/` + item.link}>descubre más</VehiclesCardLink>
                                         </VehiclesCardLinkWrapp>

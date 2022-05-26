@@ -8,21 +8,26 @@ export const VehicleCardsGrid = styled.div`
     display: grid;
     gap: 2rem;
     @media screen and (min-width: 1035px){
-        
     grid-template-columns: 1fr 1fr;
-   
     }
 `;
 
 export const VehicleCardsItem = styled.div`
 position: relative;
+
+`;
+export const VehicleCardsItemGallery = styled.div`
+   
 `;
 export const VehicleCardsItemFront = styled.div`
     position: relative;
     width: 100%;
     height: 16rem;
     background: linear-gradient(260deg,var(--primary-deg-color),var(--secondary-deg-color));
-    border-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius:${({ border }) => border ? '2rem' : 'initial'};
+    border-top-left-radius: ${({ border }) => border ? '2rem' : 'initial'};
     padding: 1rem;
     overflow: hidden;
     box-shadow: 0 0 .8rem .3rem rgba(0,0,0,.2);
